@@ -1,0 +1,86 @@
+<!-- res/layout/fragment_add_block.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Emergency Contact"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:id="@+id/add_block_heading"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/contactNameEV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/contactName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter contact name"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/contactNameEV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/eventDescTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number:"
+            android:layout_below="@id/contactName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+
+        <EditText
+            android:id="@+id/eventDesc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter contact number"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/eventDescTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:text="Add Contact"
+            android:id="@+id/addEventBtn"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

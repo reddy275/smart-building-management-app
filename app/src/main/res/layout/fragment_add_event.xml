@@ -1,0 +1,129 @@
+<!-- res/layout/fragment_add_block.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:id="@+id/add_block_heading"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/eventnameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/eventNameET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Event Name"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/eventnameTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/eventTypeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Type:"
+            android:layout_below="@id/eventNameET"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEventType"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/eventTypeTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/eventsList"/>
+
+        <TextView
+            android:id="@+id/eventDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:layout_below="@id/spinnerEventType"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <EditText
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Event Date"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/eventDateTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingHorizontal="10dp"
+            android:drawableEnd="@drawable/calendar"
+            />
+
+        <TextView
+            android:id="@+id/eventTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:layout_below="@id/eventDate"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <EditText
+            android:id="@+id/eventTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Event Time"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/eventTimeTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:text="Add Event"
+            android:id="@+id/addEventBtn"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

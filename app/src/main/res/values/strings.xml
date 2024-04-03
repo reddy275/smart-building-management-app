@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Building Maintenance</string>
+    <string name="navigation_drawer_open">Open Building Maintenance</string>
+    <string name="navigation_drawer_close">Close Building Maintenance</string>
+
+    <string name="welcome_to_">
+    Welcome to our landscaping and gardening services! We specialize in creating beautiful outdoor spaces.\n1.Ignoring safety precautions and using the wrong tool for the job are common causes of gardening injuries.\n2.Rotate your gardening tasks to avoid repetitive movements. For example, after 15 minutes of raking, swap to pruning for a while.\n3.Always wear gardening gloves to protect your hands against cuts, soil, potting mix, insect bites and skin irritants.
+    </string>
+    <string name="security_features">
+        Here, you can learn about the various security features we offer to protect your data and privacy.\nLocations of CC Cameras:\n Total no.of cameras:2\n 1. Main gate\n 2.Entrance of every block
+    </string>
+
+    <string name="fire_safety">
+        \n1.Leaving cooking appliances unattended.\n2.Using barbecue grills in or on any building or fire escape.\n3.Tamper with smoke detectors, carbon monoxide alarms, fire alarms or sprinkler systems.
+    </string>
+
+    <string name="parking_area_1">
+    Here, you can find information about our parking area, including location, availability, and rates.
+    </string>
+
+    <string name="parking_area_2">
+    <![CDATA[
+        <b>1. A-Block :</b><br/>
+        Two wheelers: 20<br/>
+        Four-wheelers: 10<br/>
+        <b>2. B-Block :</b><br/>
+        Two wheelers: 20<br/>
+        Four-wheelers: 10
+    ]]>
+    </string>
+    <string name="title_activity_smart_build_admin_menu">SmartBuildAdminMenu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

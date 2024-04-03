@@ -1,0 +1,209 @@
+<!-- res/layout/fragment_add_block.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:id="@+id/add_block_heading"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_block_heading"
+        android:layout_marginBottom="80dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/complaintBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block:"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/complaintBlockSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/complaintBlock"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/complaintFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor:"
+            android:layout_below="@id/complaintBlockSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/complaintFloorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/complaintFloor"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/doorNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Door No:"
+            android:layout_below="@id/complaintFloorSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/doorNoSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/doorNo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/complaintType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issue Type:"
+            android:layout_below="@id/doorNoSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/complaintTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/complaintType"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/complaintsList"/>
+
+        <TextView
+            android:id="@+id/repeatedIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeated Issue:"
+            android:layout_below="@id/complaintTypeSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/repeatedIssueSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/repeatedIssue"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/furnished_options"/>
+
+        <TextView
+            android:id="@+id/workRequirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Requirement:"
+            android:layout_below="@id/repeatedIssueSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/workRequirementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/workRequirement"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/furnished_options"/>
+
+        <TextView
+            android:id="@+id/complaintPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:layout_below="@id/workRequirementSpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/complaintPhoneNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Phone Number"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/complaintPhoneNumber"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/issueDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issue:"
+            android:layout_below="@id/complaintPhoneNumberET"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/issueDescET"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:hint="Enter Issue"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/issueDesc"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        
+
+
+    </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:text="Submit"
+            android:id="@+id/complaintSubmitBtn"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/homeItem"
+            android:title="Home"
+            app:showAsAction="never"
+            />
+        <item android:id="@+id/manager"
+            android:title="Manager"
+            />
+        <item android:id="@+id/staff"
+            android:title="Staff Member"
+            />
+        <item android:id="@+id/complaints"
+            android:title="Complaints"
+            />
+        <item android:id="@+id/events"
+            android:title="Add Event"
+            />
+        <item android:id="@+id/announcements"
+            android:title="Add Announcements"
+            />
+        <item android:id="@+id/emergency_contacts"
+        android:title="Emergency Contacts"
+        />
+        <item android:id="@+id/profile"
+            android:title="My Profile"
+            />
+
+
+    </group>
+    <item android:id="@+id/logout"
+        android:orderInCategory="102"
+        android:title="Logout"/>
+
+
+
+</menu>

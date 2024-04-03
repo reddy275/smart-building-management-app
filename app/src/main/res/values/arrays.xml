@@ -1,0 +1,55 @@
+<!-- res/values/arrays.xml -->
+
+<resources>
+    <string-array name="parking_availability_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="furnished_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="staff_professions">
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Painter</item>
+        <item>Gardener</item>
+    </string-array>
+
+    <string-array name="nationality">
+        <item>Indian</item>
+        <item>American</item>
+        <item>European</item>
+        <item>African</item>
+    </string-array>
+
+    <string-array name="eventsList">
+        <item>Meeting</item>
+        <item>Party</item>
+        <item>Festival</item>
+        <item>Ceremony</item>
+    </string-array>
+
+    <string-array name="announcementTypes">
+        <item>Appointment</item>
+        <item>Welcome</item>
+        <item>To-let</item>
+        <item>Volunteer Needed</item>
+    </string-array>
+
+    <string-array name="complaintsList">
+        <item>Plumbing</item>
+        <item>Electrical</item>
+        <item>Carpenter</item>
+        <item>Painting</item>
+    </string-array>
+
+    <string-array name="workRequirements">
+        <item>Replacement</item>
+        <item>Fix</item>
+    </string-array>
+
+</resources>

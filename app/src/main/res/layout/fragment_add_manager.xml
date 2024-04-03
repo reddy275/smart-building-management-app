@@ -1,0 +1,202 @@
+<!-- res/layout/fragment_add_block.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Manager"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:id="@+id/add_block_heading"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textViewBlockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Name"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/textViewBlockLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewBlockNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation:"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:inputType="none"
+            android:text="Manager"
+            android:id="@+id/editTextDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Block Name"
+            android:layout_below="@id/textViewBlockNameLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewParkingAvailabilityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Block:"
+            android:layout_below="@id/editTextDesignation"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerBlock"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewParkingAvailabilityLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewJoiningDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joining Date:"
+            android:layout_below="@id/spinnerBlock"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Add your date picker here -->
+        <EditText
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/joiningDatePickerId"
+            android:layout_below="@id/textViewJoiningDateLabel"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusableInTouchMode="false"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/calendar"
+            android:paddingHorizontal="10dp"
+            />
+
+        <TextView
+            android:id="@+id/managerPhoneNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:layout_below="@id/joiningDatePickerId"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/managerPhoneNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Phone Number"
+            android:layout_below="@id/managerPhoneNumberTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/managerNationalityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nationality:"
+            android:layout_below="@id/managerPhoneNumberET"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/managerNationalitySpinner"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/managerNationalityTV"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/nationality"/>
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_below="@id/managerNationalitySpinner"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:text="Edit"
+            android:visibility="gone"
+            android:id="@+id/buttonManagerEdit"
+            />
+
+        <Button
+            android:text="Update"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonManagerUpdate"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

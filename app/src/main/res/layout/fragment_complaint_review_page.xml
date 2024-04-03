@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_block_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_centerInParent="true">
+
+        <!-- Professionalism -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Professionalism" />
+
+            <RatingBar
+                android:id="@+id/professionalismRatingBar"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <!-- Quality of Work -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality of Work" />
+
+            <RatingBar
+                android:id="@+id/qualityOfWorkRatingBar"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <!-- Communication -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication" />
+
+            <RatingBar
+                android:id="@+id/communicationRatingBar"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Punctuality -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punctuality" />
+
+            <RatingBar
+                android:id="@+id/punctualityRatingBar"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eventDescTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments:"
+            android:layout_marginTop="8dp"/>
+
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/eventDesc"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="start"
+            android:paddingVertical="15dp"
+            android:hint="Type here..."
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/submitReviewBtn"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:text="Submit" />
+    </LinearLayout>
+</RelativeLayout>

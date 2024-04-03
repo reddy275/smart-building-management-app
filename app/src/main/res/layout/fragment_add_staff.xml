@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Staff"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:id="@+id/add_block_heading"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textViewNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Name"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="10dp"
+            android:layout_below="@id/textViewNameLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewUsernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Username"
+            android:layout_below="@id/textViewUsernameLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewPhoneNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:layout_below="@id/editTextUsername"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Phone Number"
+            android:layout_below="@id/textViewPhoneNumberLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewBlockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block:"
+            android:layout_below="@id/editTextPhoneNumber"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Add your block spinner here -->
+        <Spinner
+            android:id="@+id/blockSpinnerId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewBlockLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewProfessionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profession:"
+            android:layout_below="@id/blockSpinnerId"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Add your profession spinner here -->
+        <Spinner
+            android:id="@+id/professionSpinnerId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewProfessionLabel"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/staff_professions"/>
+        <TextView
+            android:id="@+id/textViewJoiningDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joining Date:"
+            android:layout_below="@id/professionSpinnerId"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Add your date picker here -->
+        <EditText
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/joiningDatePickerId"
+            android:layout_below="@id/textViewJoiningDateLabel"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusableInTouchMode="false"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/calendar"
+            android:paddingHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_below="@id/joiningDatePickerId"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:text="Edit"
+                android:visibility="gone"
+                android:id="@+id/buttonStaffEdit"/>
+
+            <Button
+                android:text="Update"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/buttonStaffUpdate"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
